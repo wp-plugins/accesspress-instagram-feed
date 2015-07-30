@@ -1,0 +1,77 @@
+
+/*******************************Mosaic View layout*************************************/
+/* ---- Thumb view style ---- */
+.thumb-view .thumb-elem{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.thumb-view .thumb-elem.hovermove header.thumb-elem-header .featimg img.the-thumb{
+    width: 130%;
+    height: 130%;
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    max-width: none;
+}
+/* ---- End Thumb view style ---- */
+.featimg a { display: block;}
+
+.grid-small{
+    width: 16.6666%;
+}
+
+.grid-medium{
+    width: 33.3333%;
+}
+
+.grid-large{
+    width: 33.3333%;
+}
+
+.transparent-image{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.grid-hover{
+    position: absolute;
+    display: none;
+}
+
+.grid-small {
+    padding: 5px;
+}
+.grid-medium {
+    padding: 3px 5px 5px 5px;
+}
+
+.grid-large {
+    padding: 5px;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-carousel .owl-item {
+    float: left;
+}
+
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
