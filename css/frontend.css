@@ -75,3 +75,44 @@ body
     position: relative;
     width: 100%;
 }
+
+.thumb-elem-header{
+    position:relative;
+}
+.image-hover {
+    background:rgba(0, 0, 0, 0.4);
+    padding:10px 20px;
+    position: absolute;
+    bottom: -100%;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    text-align: center;
+    -webkit-transition: all 3s ease 0s;
+    -moz-transition: all 3s ease 0s;
+    transition: all 3s ease 0s;
+}
+.masonry_elem .image-hover,
+.masonry_elem .image-hover:active,
+.masonry_elem .image-hover:hover,
+.masonry_elem .image-hover:focus{
+    color:#ffffff;
+}
+.masonry_elem:hover .image-hover{
+    bottom:0;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+span.follow{
+    float:left;
+}
+span.follow_icon{
+    float:right;
+}
