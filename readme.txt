@@ -8,31 +8,33 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin to display your instagram images different three layout masonry, masonry lightbox & slider.
+A plugin to display your Instagram images in three different layouts: Masonry, Masonry Lightbox & Slider.
 
 == Description ==
-<strong>AccessPress Instagram Feed</strong> is a <strong>Free WordPress plugin</strong> to display your instagram post image in mosaic view. A perfect plugin to show your instagram feed and encourage more to join your network.
 
-You can enter details of your instagram social media and select one of the designs from beautifully 3 design layouts. 
+<strong>AccessPress Instagram Feed</strong> is a <strong>Free WordPress plugin</strong> to display your Instagram images in mosaic view. A perfect plugin to show your Instagram feed and encourage more to join your network.
 
-All you have to do is either use a widget or shortcode to display your instagram feed right on your website in your chosen location.
+You can enter details of your Instagram social media and select one of the designs from beautifully designed 3 layouts. 
+
+All you have to do is either use a widget or shortcode to display your Instagram feed right on your website in your chosen location.
 
 = Features: =
 
-* <strong>Fetch Instagram Feeds from any account using instagram API</strong>
-* <strong>Feeds can be displayed either with normal mode or slider mode or lightbox mode</strong>
-* <strong>Shortcode and widget included</strong>
+* <strong>Fetch Instagram Feeds from any account using Instagram API</strong>
+* <strong>Feeds can be displayed either with normal mode or slider mode or Lightbox mode</strong>
+* <strong>Shortcode and widget option</strong>
 * <strong>Option to select which layout do you want show</strong>
 * <strong>Fully Responsive</strong> - compatible with mobile devices
 * <strong>User friendly and very interactive user interface</strong>
-        - Anyone can use it, its as easy.
+        - no tech knowledge to configure
 * <strong>Support</strong>
-        - Dedicated email, forum support
+        - Email, website forum support
 * <strong>Free updates</strong>
-        - Get free updates for lifetime.
+        - Get frequent free updates for lifetime.
+* <strong>Paid Customisation</strong> - Add more features by using our paid customisation service 
 
 = Shortcode =
-* Use the shortcode [ap_instagram_feed] to display the instagram feed within your content mosaic layout.
+* Use the shortcode [ap_instagram_feed]  to display the instagram feed within your content mosaic layout.
 * Use the function `<?php do_shortcode('[ap_instagram_feed]'); ?>` to display within template or theme files mosaic layout.
 * Use the shortcode [ap_instagram_mosaic_lightview] to display the instagram feed within your content mosaic lightbox layout.
 * Use the function `<?php do_shortcode('[ap_instagram_mosaic_lightview]'); ?>` to display within template or theme files mosaic lightbox layout.
