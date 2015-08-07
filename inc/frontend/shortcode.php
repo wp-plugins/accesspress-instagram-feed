@@ -39,7 +39,7 @@ function ap_instagram_feed() {
                         } elseif ($i == 4 || $i == 5) {
                             $masonary_class = 'grid-medium';
                             $image_url = APIF_IMAGE_DIR . '/image-rect.png';
-                            $image = $vm['images']['low_resolution']['url'];
+                            $image = $vm['images']['standard_resolution']['url'];
                         } elseif ($i == 3) {
                             $masonary_class = 'grid-large';
                             $image_url = APIF_IMAGE_DIR . '/image-square.png';
