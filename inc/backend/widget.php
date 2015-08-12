@@ -11,7 +11,7 @@ class APIF_Widget extends WP_Widget {
     function __construct() {
         parent::__construct(
                 'apif_widget', // Base ID
-                __('AccessPress Instagram', 'if-feed'), // Name
+                __('AP : Instagram Masonry', 'if-feed'), // Name
                 array('description' => __('AccessPress Instagram Widget', 'if-feed')) // Args
         );
     }
@@ -101,8 +101,6 @@ class APIF_Widget extends WP_Widget {
         $instance['layout'] = (!empty($new_instance['layout']) ) ? sanitize_text_field($new_instance['layout']) : '';
         return $instance;
     }
-
 }
-
 // class APS_PRO_Widget
 ?>

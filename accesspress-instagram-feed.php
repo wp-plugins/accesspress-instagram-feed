@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( "No script kiddies please!" );
 Plugin name: AccessPress Instagram Feed
 Plugin URI: https://accesspressthemes.com/wordpress-plugins/accesspress-instagram-feed/
 Description: A plugin to add various instagram widgets with dynamic configuration options.
-Version: 1.0.0
+Version: 1.0.1
 Author: AccessPress Themes
 Author URI: http://accesspressthemes.com
 Text Domain:if-feed
@@ -14,7 +14,7 @@ License: GPLv2 or later
 
 //Decleration of the necessary constants for plugin
 if(!defined ( 'APIF_VERSION' ) ){
-	define ( 'APIF_VERSION', '1.0.0' );
+	define ( 'APIF_VERSION', '1.0.1' );
 }
 
 if( !defined( 'APIF_IMAGE_DIR' ) ){
@@ -82,20 +82,17 @@ class IF_Class {
                 $apif_settings = $this->get_default_settings();
                 update_option('apif_settings', $apif_settings);
             }
-        }	    
-
+        }  
 	    /**
 	     * Plugin Admin Menu
 	     */	    
 		function add_if_menu() {
             add_menu_page(__('AccessPress Instagram Feed', 'if-feed'), __('AccessPress Instagram Feed', 'if-feed'), 'manage_options', 'if-instagram-feed', array($this, 'main_page'), APIF_IMAGE_DIR.'/sc-icon.png');
         }
-
 		//plugins backend admin page
 		function main_page() {
 			include( 'inc/backend/main-page.php' );
 		}
-
 		/**
 	     * Starts the session
 	     */
@@ -104,7 +101,6 @@ class IF_Class {
 	            session_start();
 	        }
 	    }
-
         /**
          * Adds Shortcode
          */
@@ -125,7 +121,6 @@ class IF_Class {
                 return $apif_settings;
         }
 
-
         /**
          * Saves settings to database
          */
@@ -134,9 +129,7 @@ class IF_Class {
                 
                 include('inc/backend/save-settings.php');
             }
-        }
-       
-
+        }       
 	    /**
          * Registering of backend js and css
          */
@@ -146,7 +139,6 @@ class IF_Class {
                 wp_enqueue_script('sc-admin-js', APIF_JS_DIR . '/backend.js', array('jquery', 'jquery-ui-sortable'), APIF_VERSION);
             }
         }
-
         /**
          * Registers Frontend Assets
          * */
@@ -155,7 +147,7 @@ class IF_Class {
             wp_enqueue_style('owl-theme', APIF_CSS_DIR . '/owl.theme.css', array(), APIF_VERSION);
             wp_enqueue_style('owl-carousel', APIF_CSS_DIR . '/owl.carousel.css', array(), APIF_VERSION);
             wp_enqueue_style('apif-frontend-css', APIF_CSS_DIR . '/frontend.css', array(), APIF_VERSION);
-            
+            wp_enqueue_style('apsc-font-awesome',APIF_CSS_DIR.'/font-awesome.min.css',array(),APIF_VERSION);
             wp_enqueue_script('lightbox-js', APIF_JS_DIR. '/lightbox.js', array('jquery'), '2.8.1',true);
             wp_enqueue_script('apif-isotope-pkgd-min-js', APIF_JS_DIR. '/isotope.pkgd.min.js', array('jquery'), '2.2.0', true );
             wp_enqueue_script('owl-carousel-js', APIF_JS_DIR. '/owl.carousel.js', array('jquery'));
@@ -168,6 +160,5 @@ class IF_Class {
             register_widget('APIF_Widget');
         }
     }
-
     $sc_object = new IF_Class(); //initialization of plugin
 }

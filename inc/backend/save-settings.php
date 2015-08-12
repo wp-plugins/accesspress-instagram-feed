@@ -26,11 +26,11 @@ $apif_settings['username'] = $username;
 $apif_settings['access_token'] = $access_token;
 $apif_settings['instagram_mosaic'] = isset($instagram_mosaic)?$instagram_mosaic:'mosaic';
 $apif_settings['user_id'] = $user_id;
+$apif_settings['active'] = $active;
 
 update_option('apif_settings', $apif_settings);
 
 $_SESSION['apif_message'] = __('Settings Saved Successfully','if-feed');
 wp_redirect(admin_url().'admin.php?page=if-instagram-feed');
 exit();
-
 ?>

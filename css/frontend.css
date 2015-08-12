@@ -9,7 +9,7 @@
 
 .thumb-view .thumb-elem.hovermove header.thumb-elem-header .featimg img.the-thumb{
     width: 130%;
-    height: 130%;
+    height: auto;
     position: absolute;
     top: -15%;
     left: -15%;
@@ -99,6 +99,7 @@ body
 .masonry_elem .image-hover:focus{
     color:#ffffff;
 }
+.owl-item:hover .image-hover,
 .masonry_elem:hover .image-hover{
     bottom:0;
     cursor: pointer;
@@ -116,3 +117,63 @@ span.follow{
 span.follow_icon{
     float:right;
 }
+.owl-item:hover .instagram_like_count,
+.masonry_elem:hover .instagram_like_count{
+    opacity:1
+}
+span.instagram_like_count span{
+    display: inline-block;
+    font-size:1em;
+}
+span.instagram_like_count {
+    opacity:0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    width:100%;
+    text-align: center;
+    margin-top: -14.5px;
+    color:#ffffff;    
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.instagram_imge_like:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,0.85)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 100%);
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 100%);
+    background: -ms-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#d9ffffff',GradientType=1);
+    width: 35%;
+    top: 30%;
+    height: 1px;
+    left: 5%;
+}
+.instagram_imge_like:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: -moz-linear-gradient(left,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0.85)),color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9ffffff',endColorstr='#00ffffff',GradientType=1);
+    width: 35%;
+    top: 30%;
+    height: 1px;
+    right: 5%;
+}
+.instagram_imge_like{
+    position:relative;
+}
+.instagram_imge_like .count{
+    display: block;
+}
+
